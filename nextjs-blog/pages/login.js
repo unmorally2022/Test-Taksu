@@ -1,12 +1,9 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import React, { useState } from "react";
+import React, { useState, localStorage } from "react";
 
-export default function myLogin() {
-
-  const [name, setName] = useState();
-
-
+export default function myLogin(req) {
+  
   return (
 
     <div className={styles.container}>
@@ -17,7 +14,7 @@ export default function myLogin() {
       </Head>
 
       <main>
-        <form action="/HomeScreen" method="post" Content-Type='application/json'>
+        <form action="/HomeScreen" method="post">
           <label className={styles.label}>
             Name:
           </label>
