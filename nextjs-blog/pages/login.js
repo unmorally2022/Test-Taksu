@@ -17,8 +17,7 @@ export default function myLogin() {
       </Head>
 
       <main>
-        {/* <form method="post" onSubmit={handleSubmit}> */}
-        <form action="/HomeScreen" method="post" Content-Type= 'application/json'>
+        <form action="/HomeScreen" method="post" Content-Type='application/json'>
           <label className={styles.label}>
             Name:
           </label>
